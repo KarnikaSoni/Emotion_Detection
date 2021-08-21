@@ -179,4 +179,4 @@ We run our Model on data that it has never seen before contained in X_test and y
 Test Accuracy: 0.8706265091896057
 ```
 We plot the loss for validation loss and accuracy for 2 epochs.
-![Screenshot (85)](https://user-images.githubusercontent.com/70371572/130329023-c454f03e-a12b-4930-a03e-b3f671e8cb2f.png)
+![Screenshot (93)](https://user-images.githubusercontent.com/70371572/130334837-fe4a0ab0-584f-4b5e-8cd6-2410c5d426b8.png)
