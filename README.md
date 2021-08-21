@@ -115,6 +115,5 @@ Has two paths Main Path and Short Path. These consists of Convolution (Conv2D wi
 ```X = Dropout(0.2)(X)```
 We drop 20% of the Neurons, the network avoids having interdependency between the neurons able to improve the network performance.
 
-![Screenshot (82)](https://user-images.githubusercontent.com/70371572/130328080-079b733a-a1f2-4a46-b8f8-969f157563cd.png)
 ![Screenshot (81)](https://user-images.githubusercontent.com/70371572/130328084-d428e5de-97d8-475f-b860-f58fcb3730dc.png)
-
+![Screenshot (82)](https://user-images.githubusercontent.com/70371572/130328080-079b733a-a1f2-4a46-b8f8-969f157563cd.png)
