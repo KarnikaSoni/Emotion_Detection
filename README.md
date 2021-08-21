@@ -102,6 +102,7 @@ RESNET(Residual Network)
 - As CNNs grow deeper, vanishing gradient tend to occur which negatively impacts performance.
 - Residual Neural Network includes "skip connection" feature that enables training of 152 layers without vanishing Gradient Issue.
 - This is done by identity mapping on top of CNN.
-![Screenshot (76)](https://user-images.githubusercontent.com/70371572/130325639-47074eb0-56a6-4502-99b6-fbd7a6d8f5e4.png)
+- ![Screenshot (80)](https://user-images.githubusercontent.com/70371572/130325757-6267fb7e-6fae-42fd-961b-22a798da1812.png)
+![Screenshot (79)](https://user-images.githubusercontent.com/70371572/130325769-3b8a1f58-8921-4618-8596-a9a2449f87ba.png)
 ![Screenshot (78)](https://user-images.githubusercontent.com/70371572/130325706-fbc60a8e-08a5-4ab7-844f-8f36cb7c131b.png)
 
