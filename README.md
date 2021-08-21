@@ -43,3 +43,6 @@ for j in range(1, 31, 2):
         
 ![Screenshot (68)](https://user-images.githubusercontent.com/70371572/130304485-91dd9924-4d83-4e80-82f3-f3a09f8f01c5.png)
 
+Now we plot a grid to view more images
+![Screenshot (69)](https://user-images.githubusercontent.com/70371572/130304626-e9302820-c31e-48a4-bef2-e3262972d860.png)
+
