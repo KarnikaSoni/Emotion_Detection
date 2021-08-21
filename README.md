@@ -23,8 +23,8 @@ We load the dataset to look at the columns which the various coordinates of the 
 ![Screenshot (63)](https://user-images.githubusercontent.com/70371572/130304141-46661b78-eeea-4f74-b6ff-e22a7b0f137e.png)
 ![Screenshot (64)](https://user-images.githubusercontent.com/70371572/130304149-4db162a4-61fd-4249-ad63-ca34d559619f.png)
 
-Now we check the different data types associated with each columns using keyfacial_df.info().
+Now we check the different data types associated with each columns using ```keyfacial_df.info().```
 ![Screenshot (65)](https://user-images.githubusercontent.com/70371572/130304248-41b43f0a-e9ff-4644-ae2e-5b89f7fe3958.png)
 
-We also check for any null values using keyfacial_df.isnull().sum().
-![Screenshot (66)](https://user-images.githubusercontent.com/70371572/130304248-41b43f0a-e9ff-4644-ae2e-5b89f7fe3958.png)
+We also check for any null values using ```keyfacial_df.isnull().sum().```
+![Screenshot (66)](https://user-images.githubusercontent.com/70371572/130304280-7da8e0b1-eedb-40ac-a9fb-bbca702d8f08.png)
