@@ -38,6 +38,8 @@ We plot a random image from the dataset along with facial keypoints. Image data 
 ```i = np.random.randint(1, len(keyfacial_df))
 plt.imshow(keyfacial_df['Image'][i], cmap = 'gray')
 for j in range(1, 31, 2):
-        plt.plot(keyfacial_df.loc[i][j-1], keyfacial_df.loc[i][j], 'rx')```
+        plt.plot(keyfacial_df.loc[i][j-1], keyfacial_df.loc[i][j], 'rx')
+```
+        
 ![Screenshot (68)](https://user-images.githubusercontent.com/70371572/130304485-91dd9924-4d83-4e80-82f3-f3a09f8f01c5.png)
 
