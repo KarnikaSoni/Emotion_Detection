@@ -52,14 +52,14 @@ for j in range (1, 31, 2):
 ```
 ![Screenshot (69)](https://user-images.githubusercontent.com/70371572/130304626-e9302820-c31e-48a4-bef2-e3262972d860.png)
 
-## TASK 4. Image Augmentation
+## Part 4. Image Augmentation
 We want to Horizintally flip the images i.e.  flip the images along y axis.This means y coordinate values would be the same and only x coordiante values would change, we subtract our initial x-coordinate values from width of the image(96).
 
 ### Original Image and Horizonatlly flipped Image
 ![Screenshot (70)](https://user-images.githubusercontent.com/70371572/130325501-4adbae90-050e-4483-bc23-ca4a11eb225d.png)
 Now we do this for every image in our dataframe and then concatenate the original dataframe with the augmented dataframe. We can also try experimenting with other ways to change the image by increasing or decreasing brightness which can be achieved by multiplying pixel values by random values between 1.5 and 2.
 
-## TASK 5. Perform Data Normalisation & Training Data Preparation
+## Part 5. Perform Data Normalisation & Training Data Preparation
 
 Now we normalise the images by dividing the value present in 31st column by 255. Then we create an empty array of shape (x, 96, 96, 1) to feed the model
 ```X = np.empty((len(img), 96, 96, 1))```
@@ -71,7 +71,7 @@ for i in range(len(img)):
 Now we split the data into 80 % training and 20% testing. 
 ```X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)```
 
-## TASK 6. Understanding Theory behind NEURAL NETWORKS, GRADIENT DESCENT ALGORITHM, CONVOLUTIONAL NEURAL NETWORKS AND RESNETS
+## Part 6. Understanding Theory behind NEURAL NETWORKS, GRADIENT DESCENT ALGORITHM, CONVOLUTIONAL NEURAL NETWORKS AND RESNETS
 
 ![Screenshot (71)](https://user-images.githubusercontent.com/70371572/130325538-6f293de7-1939-47d5-9051-bde20589b82e.png)
 - Artificial Neuron replicates the Human Neuron using by accepting input, assigning weights to connect various layers and produces an output.
@@ -118,7 +118,7 @@ We drop 20% of the Neurons, the network avoids having interdependency between th
 ![Screenshot (81)](https://user-images.githubusercontent.com/70371572/130328084-d428e5de-97d8-475f-b860-f58fcb3730dc.png)
 ![Screenshot (82)](https://user-images.githubusercontent.com/70371572/130328080-079b733a-a1f2-4a46-b8f8-969f157563cd.png)
 
-## Task 7. Train Key Facial Points Detection DEEP LEARNING MODEL
+## Part 7. Train Key Facial Points Detection DEEP LEARNING MODEL
 We use Adam Optimizer to compile and run. More information about Adam optimizer: https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam. It uses Gradient Descent method. 
 
 ```checkpointer = ModelCheckpoint(filepath = "FacislKeyPoints_weigths.hdf5", verbose = 1, save_best_only = True)```
@@ -136,7 +136,7 @@ Accuracy : 0.8419002890586853
 We plot the loss for both training and validation for 2 epochs.
 ![Screenshot (85)](https://user-images.githubusercontent.com/70371572/130329023-c454f03e-a12b-4930-a03e-b3f671e8cb2f.png)
 
-## Task 8. Explore Dataset for Facial Expression Detection, perform Image Augmentation and Train Deep Learning Model for FACIAL EXPRESSION CLASSIFICATION
+## Part 8. Explore Dataset for Facial Expression Detection, perform Image Augmentation and Train Deep Learning Model for FACIAL EXPRESSION CLASSIFICATION
 ```facialexpression_df.head()```
 ![Screenshot (86)](https://user-images.githubusercontent.com/70371572/130329199-e5e20be7-7cbb-43e3-84c5-d8b9a581248c.png)
 Now we visualize 1 image of each emotion category:
@@ -190,7 +190,7 @@ We can also see this visually by plotting images with their actual and predicted
 Now we print the classification report using sklearn.
 ![Screenshot (96)](https://user-images.githubusercontent.com/70371572/130334942-53988610-6772-41b4-b363-bd3708a077c0.png)
 
-## Task 9. Results
+## Part 9. Results
 ### Combine both models (1) FACIAL KEYPOINTS DETECTION & (2) FACIAL EXPRESSION MODEL
 We combine 2 models by assigning the df-Predict of model_1 add df_emotion in a single dataframe. 
 ``` df_predict.head()```
