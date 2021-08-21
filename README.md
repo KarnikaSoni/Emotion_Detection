@@ -185,3 +185,17 @@ We print the confusion matrix for predicted and actual emotions. This will provi
 ![Screenshot (94)](https://user-images.githubusercontent.com/70371572/130334892-648a439c-9684-4d4a-a893-fe4860f3a2da.png)
 
 The diagonal indicates the correct classification of expressions and emotions.
+We can also see this visually by plotting images with their actual and predicted emotions.
+![Screenshot (95)](https://user-images.githubusercontent.com/70371572/130334921-ab2d4abe-9c7c-447f-a814-672822219be3.png)
+Now we print the classification report using sklearn.
+![Screenshot (96)](https://user-images.githubusercontent.com/70371572/130334942-53988610-6772-41b4-b363-bd3708a077c0.png)
+
+## Task 9. Combine both models (1) FACIAL KEYPOINTS DETECTION & (2) FACIAL EXPRESSION MODEL
+We combine 2 models by assigning the df-Predict of model_1 add df_emotion in a single dataframe. 
+``` df_predict.head()```
+![Screenshot (99)](https://user-images.githubusercontent.com/70371572/130335152-07d246ce-a79b-4b09-a97d-20cffad1e913.png)
+
+We can see the results of this combined model which plots both predicted emotions and key facial points.
+![Screenshot (97)](https://user-images.githubusercontent.com/70371572/130335181-005fcfc1-fc9c-4a85-b0a8-73da3f6101b9.png)
+
+
