@@ -178,5 +178,10 @@ We run our Model on data that it has never seen before contained in X_test and y
 39/39 [==============================] - 5s 130ms/step - loss: 0.3553 - accuracy: 0.8706
 Test Accuracy: 0.8706265091896057
 ```
-We plot the loss for validation loss and accuracy for 2 epochs.
+We plot the loss for validation accuracy for 2 epochs.
 ![Screenshot (93)](https://user-images.githubusercontent.com/70371572/130334837-fe4a0ab0-584f-4b5e-8cd6-2410c5d426b8.png)
+
+We print the confusion matrix for predicted and actual emotions. This will provide a summary for the overall model performance.
+![Screenshot (94)](https://user-images.githubusercontent.com/70371572/130334892-648a439c-9684-4d4a-a893-fe4860f3a2da.png)
+
+The diagonal indicates the correct classification of expressions and emotions.
