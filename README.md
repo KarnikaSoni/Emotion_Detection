@@ -190,7 +190,8 @@ We can also see this visually by plotting images with their actual and predicted
 Now we print the classification report using sklearn.
 ![Screenshot (96)](https://user-images.githubusercontent.com/70371572/130334942-53988610-6772-41b4-b363-bd3708a077c0.png)
 
-## Task 9. Combine both models (1) FACIAL KEYPOINTS DETECTION & (2) FACIAL EXPRESSION MODEL
+## Task 9. Results
+### Combine both models (1) FACIAL KEYPOINTS DETECTION & (2) FACIAL EXPRESSION MODEL
 We combine 2 models by assigning the df-Predict of model_1 add df_emotion in a single dataframe. 
 ``` df_predict.head()```
 ![Screenshot (99)](https://user-images.githubusercontent.com/70371572/130335152-07d246ce-a79b-4b09-a97d-20cffad1e913.png)
