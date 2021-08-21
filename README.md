@@ -26,9 +26,6 @@ We load the dataset to look at the columns which the various coordinates of the 
 Now we check the different data types associated with each columns using ```keyfacial_df.info().```
 ![Screenshot (65)](https://user-images.githubusercontent.com/70371572/130304248-41b43f0a-e9ff-4644-ae2e-5b89f7fe3958.png)
 
-We also check for any null values using ```keyfacial_df.isnull().sum().```
-![Screenshot (66)](https://user-images.githubusercontent.com/70371572/130304280-7da8e0b1-eedb-40ac-a9fb-bbca702d8f08.png)
-
 We also check for max, min and verage values for all 15 facial points using ```keyfacial_df.describe()```
 ![Screenshot (67)](https://user-images.githubusercontent.com/70371572/130304391-94ffdc0d-8478-4b17-a451-0f22e06e254c.png)
 
