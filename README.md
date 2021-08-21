@@ -103,5 +103,5 @@ RESNET(Residual Network)
 - Residual Neural Network includes "skip connection" feature that enables training of 152 layers without vanishing Gradient Issue.
 - This is done by identity mapping on top of CNN.
 ![Screenshot (76)](https://user-images.githubusercontent.com/70371572/130325639-47074eb0-56a6-4502-99b6-fbd7a6d8f5e4.png)
-![Screenshot (77)](https://user-images.githubusercontent.com/70371572/130325643-cd17835d-1614-4b14-b710-9c3dd1d4baba.png)
+![Screenshot (78)](https://user-images.githubusercontent.com/70371572/130325706-fbc60a8e-08a5-4ab7-844f-8f36cb7c131b.png)
 
