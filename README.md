@@ -136,7 +136,7 @@ Accuracy : 0.8419002890586853
 We plot the loss for both training and validation for 2 epochs.
 ![Screenshot (85)](https://user-images.githubusercontent.com/70371572/130329023-c454f03e-a12b-4930-a03e-b3f671e8cb2f.png)
 
-## Part 8. Explore Dataset for Facial Expression Detection, perform Image Augmentation and Train Deep Learning Model for FACIAL EXPRESSION CLASSIFICATION
+## Part 8. Explore Data for Facial Expression Detection, Image Augmentation 
 ```facialexpression_df.head()```
 ![Screenshot (86)](https://user-images.githubusercontent.com/70371572/130329199-e5e20be7-7cbb-43e3-84c5-d8b9a581248c.png)
 Now we visualize 1 image of each emotion category:
@@ -155,6 +155,7 @@ X_train = X_train/255
 X_val   = X_val /255
 X_Test  = X_Test/255
 ```
+### Train Deep Learning Model for FACIAL EXPRESSION CLASSIFICATION
 After this we perform training of the model using identical steps from Task 6 and 7.
 ```model_2_emotion.summary()```
 ![Screenshot (91)](https://user-images.githubusercontent.com/70371572/130329505-4e1c3f1a-ba35-4c6b-bf0c-3ac73da29871.png)
