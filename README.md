@@ -117,3 +117,31 @@ We drop 20% of the Neurons, the network avoids having interdependency between th
 
 ![Screenshot (81)](https://user-images.githubusercontent.com/70371572/130328084-d428e5de-97d8-475f-b860-f58fcb3730dc.png)
 ![Screenshot (82)](https://user-images.githubusercontent.com/70371572/130328080-079b733a-a1f2-4a46-b8f8-969f157563cd.png)
+
+## Task 7. Train Key Facial Points Detection DEEP LEARNING MODEL
+We use Adam Optimizer to compile and run. More information about Adam optimizer: https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam. It uses Gradient Descent method. 
+
+```checkpointer = ModelCheckpoint(filepath = "FacislKeyPoints_weigths.hdf5", verbose = 1, save_best_only = True)```
+We check which model has the least validation loss, save only the best which would trained throughout the various epochs.
+```history = model_1_facialKeyPoints.fit(X_train, y_train, batch_size = 32, epochs = 2, validation_split = 0.05, callbacks=[checkpointer])```
+Fit the training data to the model with 5% validation data set. The loss decreases, accuracy increases, and weights are optimized to reduce the error.
+![Screenshot (81)](https://user-images.githubusercontent.com/70371572/130328841-f8a166d0-2537-4c84-8f7d-041a4c2aaf1f.png)
+
+### Assess the Performance
+We run our Model on data that it has never seen before contained in X_test and y_test. The accuracy is 85%.
+```
+41/41 [==============================] - 5s 102ms/step - loss: 9.3887 - accuracy: 0.8575
+Accuracy : 0.8419002890586853
+```
+We plot the loss for both training and validation for 2 epochs.
+![Screenshot (85)](https://user-images.githubusercontent.com/70371572/130329023-c454f03e-a12b-4930-a03e-b3f671e8cb2f.png)
+
+## Task 8. Explore Dataset for Facial Expression Detection
+```facialexpression_df.head()```
+![Screenshot (86)](https://user-images.githubusercontent.com/70371572/130329199-e5e20be7-7cbb-43e3-84c5-d8b9a581248c.png)
+Now we visualize 1 image of each emotion category:
+![Screenshot (88)](https://user-images.githubusercontent.com/70371572/130329242-7348af76-c1a6-4053-8c05-bf8608d63f76.png)
+![Screenshot (87)](https://user-images.githubusercontent.com/70371572/130329246-29ff2322-ac0a-4d94-8877-b7ea3a0b43cf.png)
+![Screenshot (89)](https://user-images.githubusercontent.com/70371572/130329252-fe37c473-a882-4387-ad1a-542e9e157c8a.png)
+
+
