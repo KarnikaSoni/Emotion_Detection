@@ -44,5 +44,64 @@ for j in range(1, 31, 2):
 ![Screenshot (68)](https://user-images.githubusercontent.com/70371572/130304485-91dd9924-4d83-4e80-82f3-f3a09f8f01c5.png)
 
 Now we plot a grid to view more images
+```
+i = np.random.randint(1, len(keyfacial_df))
+plt.imshow(keyfacial_df['Image'][i], cmap = 'gray')
+for j in range (1, 31, 2):
+    plt.plot(keyfacial_df.loc[i][j-1], keyfacial_df.loc[i][j], 'rx')
+```
 ![Screenshot (69)](https://user-images.githubusercontent.com/70371572/130304626-e9302820-c31e-48a4-bef2-e3262972d860.png)
+
+## TASK 4. Image Augmentation
+We want to Horizintally flip the images i.e.  flip the images along y axis.This means y coordinate values would be the same and only x coordiante values would change, we subtract our initial x-coordinate values from width of the image(96).
+
+### Original Image and Horizonatlly flipped Image
+![Screenshot (70)](https://user-images.githubusercontent.com/70371572/130325501-4adbae90-050e-4483-bc23-ca4a11eb225d.png)
+Now we do this for every image in our dataframe and then concatenate the original dataframe with the augmented dataframe. We can also try experimenting with other ways to change the image by increasing or decreasing brightness which can be achieved by multiplying pixel values by random values between 1.5 and 2.
+
+## TASK 5. Perform Data Normalisation & Training Data Preparation
+
+Now we normalise the images by dividing the value present in 31st column by 255. Then we create an empty array of shape (x, 96, 96, 1) to feed the model
+```X = np.empty((len(img), 96, 96, 1))```
+Then we iterate through the img list and add image values to the empty array after expanding it's dimension from (96, 96) to (96, 96, 1)
+```
+for i in range(len(img)):
+  X[i,] = np.expand_dims(img[i], axis = 2)
+```
+Now we split the data into 80 % training and 20% testing. 
+```X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)```
+
+## TASK 6. Understanding Theory behind NEURAL NETWORKS, GRADIENT DESCENT ALGORITHM, CONVOLUTIONAL NEURAL NETWORKS AND RESNETS
+
+![Screenshot (71)](https://user-images.githubusercontent.com/70371572/130325538-6f293de7-1939-47d5-9051-bde20589b82e.png)
+- Artificial Neuron replicates the Human Neuron using by accepting input, assigning weights to connect various layers and produces an output.
+- All multiple neurons are connected in a multi-layer fashion.
+- The more in-between or hidden layers there are the more "deep" the network will get.
+
+Dividing data into Training and Testing
+![Screenshot (72)](https://user-images.githubusercontent.com/70371572/130325563-ee69fa80-9231-4385-9bc6-0d946779c0ae.png)
+- generally 80% training and 20% testing
+- for cross validation we can divide into 60% training, 20% validation and 20% testing.
+- Training set is usually used for gradient calculation and weight update.
+- Validation is used for cross validation to overcome the overfitting problem which occurs when algorithm focuses on training set details and starts to lose the generalisation ability.
+
+Gradient Descent 
+![Screenshot (73)](https://user-images.githubusercontent.com/70371572/130325579-2279d1f1-a032-48cc-bc83-a6c6782a22a0.png)
+
+- Optimization algorithm to obtain the optimised network weight and bias values.
+- works using iteration to minimize the cost function.
+- it calculates the gradient of cost function and moving in the negative direction until global minimum is achieved.
+- The size of the steps taken are called the learning rate.
+- If learning rate increases then the area covered in te search space will increase so we might reach global minimum faster.
+- For smaller learning rates training will take much longer to reach optimized weight values.
+
+Convolutional Neural Networks
+![Screenshot (75)](https://user-images.githubusercontent.com/70371572/130325609-e14c4f0b-e6ee-4838-ad24-9a16a56f40b7.png)
+
+RESNET(Residual Network)
+- As CNNs grow deeper, vanishing gradient tend to occur which negatively impacts performance.
+- Residual Neural Network includes "skip connection" feature that enables training of 152 layers without vanishing Gradient Issue.
+- This is done by identity mapping on top of CNN.
+![Screenshot (76)](https://user-images.githubusercontent.com/70371572/130325639-47074eb0-56a6-4502-99b6-fbd7a6d8f5e4.png)
+![Screenshot (77)](https://user-images.githubusercontent.com/70371572/130325643-cd17835d-1614-4b14-b710-9c3dd1d4baba.png)
 
