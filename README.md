@@ -28,3 +28,16 @@ Now we check the different data types associated with each columns using ```keyf
 
 We also check for any null values using ```keyfacial_df.isnull().sum().```
 ![Screenshot (66)](https://user-images.githubusercontent.com/70371572/130304280-7da8e0b1-eedb-40ac-a9fb-bbca702d8f08.png)
+
+We also check for max, min and verage values for all 15 facial points using ```keyfacial_df.describe()```
+![Screenshot (67)](https://user-images.githubusercontent.com/70371572/130304391-94ffdc0d-8478-4b17-a451-0f22e06e254c.png)
+
+## Part 3.Perform Image Visulaisation
+We plot a random image from the dataset along with facial keypoints. Image data is obtained from df['Image'] and plotted using plt.imshow. 15 x and y coordinates are marked for the corresponding image with the information that x-coordinates are in even columns like 0,2,4 and y-coordinates are in odd columns like 1,3,5. We access their value using .loc command that gets the values for coordinates of the image based on the column it is refering to.
+
+```i = np.random.randint(1, len(keyfacial_df))
+plt.imshow(keyfacial_df['Image'][i], cmap = 'gray')
+for j in range(1, 31, 2):
+        plt.plot(keyfacial_df.loc[i][j-1], keyfacial_df.loc[i][j], 'rx')```
+![Screenshot (68)](https://user-images.githubusercontent.com/70371572/130304485-91dd9924-4d83-4e80-82f3-f3a09f8f01c5.png)
+
