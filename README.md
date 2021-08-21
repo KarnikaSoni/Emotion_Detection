@@ -18,7 +18,13 @@ We would need the following libraries for visualisation of images and training o
 - numpy
 - pandas
 
-We load the dataset to look at the columns which the various coordinates of the facial features using describe.
+We load the dataset to look at the columns which the various coordinates of the facial features which uses pixels to specify various facial key points like right eye corner, mouth corners, etc.
 ![Screenshot (62)](https://user-images.githubusercontent.com/70371572/130304115-925d1da2-26d2-4a2a-aa5b-35fef44c0260.png)
 ![Screenshot (63)](https://user-images.githubusercontent.com/70371572/130304141-46661b78-eeea-4f74-b6ff-e22a7b0f137e.png)
 ![Screenshot (64)](https://user-images.githubusercontent.com/70371572/130304149-4db162a4-61fd-4249-ad63-ca34d559619f.png)
+
+Now we check the different data types associated with each columns using keyfacial_df.info().
+![Screenshot (65)](https://user-images.githubusercontent.com/70371572/130304248-41b43f0a-e9ff-4644-ae2e-5b89f7fe3958.png)
+
+We also check for any null values using keyfacial_df.isnull().sum().
+![Screenshot (66)](https://user-images.githubusercontent.com/70371572/130304248-41b43f0a-e9ff-4644-ae2e-5b89f7fe3958.png)
