@@ -160,3 +160,23 @@ After this we perform training of the model using identical steps from Task 6 an
 ![Screenshot (91)](https://user-images.githubusercontent.com/70371572/130329505-4e1c3f1a-ba35-4c6b-bf0c-3ac73da29871.png)
 ![Screenshot (92)](https://user-images.githubusercontent.com/70371572/130329506-6840976d-f328-4692-8c41-f52c69bbc99f.png)
 
+Then we Adam optimizer again and then save the best model.
+```
+Epoch 1/2
+345/345 [==============================] - ETA: 0s - loss: 1.2713 - accuracy: 0.4773
+Epoch 00001: val_loss improved from inf to 1.49306, saving model to FacialExpression_weights.hdf5
+345/345 [==============================] - 433s 1s/step - loss: 1.2713 - accuracy: 0.4773 - val_loss: 1.4931 - val_accuracy: 0.3713
+Epoch 2/2
+345/345 [==============================] - ETA: 0s - loss: 0.9051 - accuracy: 0.6389
+Epoch 00002: val_loss improved from 1.49306 to 1.03988, saving model to FacialExpression_weights.hdf5
+345/345 [==============================] - 434s 1s/step - loss: 0.9051 - accuracy: 0.6389 - val_loss: 1.0399 - val_accuracy: 0.5806
+```
+
+### Assess the performance of TRAINED FACIAL EXPRESSION CLASSIFIER MODEL
+We run our Model on data that it has never seen before contained in X_test and y_test. The accuracy is 87%.
+```
+39/39 [==============================] - 5s 130ms/step - loss: 0.3553 - accuracy: 0.8706
+Test Accuracy: 0.8706265091896057
+```
+We plot the loss for validation loss and accuracy for 2 epochs.
+![Screenshot (85)](https://user-images.githubusercontent.com/70371572/130329023-c454f03e-a12b-4930-a03e-b3f671e8cb2f.png)
