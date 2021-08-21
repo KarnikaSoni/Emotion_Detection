@@ -136,7 +136,7 @@ Accuracy : 0.8419002890586853
 We plot the loss for both training and validation for 2 epochs.
 ![Screenshot (85)](https://user-images.githubusercontent.com/70371572/130329023-c454f03e-a12b-4930-a03e-b3f671e8cb2f.png)
 
-## Task 8. Explore Dataset for Facial Expression Detection
+## Task 8. Explore Dataset for Facial Expression Detection, perform Image Augmentation and Train Deep Learning Model for FACIAL EXPRESSION CLASSIFICATION
 ```facialexpression_df.head()```
 ![Screenshot (86)](https://user-images.githubusercontent.com/70371572/130329199-e5e20be7-7cbb-43e3-84c5-d8b9a581248c.png)
 Now we visualize 1 image of each emotion category:
@@ -144,4 +144,19 @@ Now we visualize 1 image of each emotion category:
 ![Screenshot (87)](https://user-images.githubusercontent.com/70371572/130329246-29ff2322-ac0a-4d94-8877-b7ea3a0b43cf.png)
 ![Screenshot (89)](https://user-images.githubusercontent.com/70371572/130329252-fe37c473-a882-4387-ad1a-542e9e157c8a.png)
 
+Now we plot the number of images we have for each emotion to see if the data set is balanced or not.
+![Screenshot (90)](https://user-images.githubusercontent.com/70371572/130329305-2cc0780a-1759-4995-aad9-d590d6c3b571.png)
+
+As emotion 1 is significantly lower then other 4, it is an unbalanced dataset.
+
+Then we do image pre-processing
+```
+X_train = X_train/255
+X_val   = X_val /255
+X_Test  = X_Test/255
+```
+After this we perform training of the model using identical steps from Task 6 and 7.
+```model_2_emotion.summary()```
+![Screenshot (91)](https://user-images.githubusercontent.com/70371572/130329505-4e1c3f1a-ba35-4c6b-bf0c-3ac73da29871.png)
+![Screenshot (92)](https://user-images.githubusercontent.com/70371572/130329506-6840976d-f328-4692-8c41-f52c69bbc99f.png)
 
