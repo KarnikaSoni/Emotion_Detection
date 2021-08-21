@@ -68,7 +68,7 @@ for i in range(len(img)):
 Now we split the data into 80 % training and 20% testing. 
 ```X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)```
 
-## Part 6. Understanding Theory behind NEURAL NETWORKS, GRADIENT DESCENT ALGORITHM, CONVOLUTIONAL NEURAL NETWORKS AND RESNETS
+## Part 6. Understanding Theory behind Neural Networks, Gradient Descent Algorithm, Convolutional Neural Networks & RESNETS
 
 ![Screenshot (71)](https://user-images.githubusercontent.com/70371572/130325538-6f293de7-1939-47d5-9051-bde20589b82e.png)
 - Artificial Neuron replicates the Human Neuron using by accepting input, assigning weights to connect various layers and produces an output.
@@ -115,7 +115,7 @@ We drop 20% of the Neurons, the network avoids having interdependency between th
 ![Screenshot (81)](https://user-images.githubusercontent.com/70371572/130328084-d428e5de-97d8-475f-b860-f58fcb3730dc.png)
 ![Screenshot (82)](https://user-images.githubusercontent.com/70371572/130328080-079b733a-a1f2-4a46-b8f8-969f157563cd.png)
 
-## Part 7. Train Key Facial Points Detection DEEP LEARNING MODEL
+## Part 7. Train Key Facial Points Detection using Deep Learning Model
 We use Adam Optimizer to compile and run. More information about Adam optimizer: https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam. It uses Gradient Descent method. 
 
 ```checkpointer = ModelCheckpoint(filepath = "FacislKeyPoints_weigths.hdf5", verbose = 1, save_best_only = True)```
