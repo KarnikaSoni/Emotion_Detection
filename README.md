@@ -30,7 +30,7 @@ We also check for max, min and verage values for all 15 facial points using ```k
 ![Screenshot (67)](https://user-images.githubusercontent.com/70371572/130304391-94ffdc0d-8478-4b17-a451-0f22e06e254c.png)
 
 ## Part 3.Perform Image Visualization
-We plot a random image from the dataset along with facial keypoints. Image data is obtained from df['Image'] and plotted using plt.imshow. 15 x and y coordinates are marked for the corresponding image with the information that x-coordinates are in even columns like 0,2,4 and y-coordinates are in odd columns like 1,3,5. We access their value using .loc command that gets the values for coordinates of the image based on the column it is refering to.
+We plot a random image from the dataset along with facial keypoints. Image data is obtained from df['Image'] and plotted using plt.imshow. 15 x and y coordinates are marked for the corresponding image with the information that x-coordinates are in even columns like 0,2,4 and y-coordinates are in odd columns like 1,3,5. We access their value using .loc command that gets the values for coordinates of the image based on the column it is referring to.
 
 ```i = np.random.randint(1, len(keyfacial_df))
 plt.imshow(keyfacial_df['Image'][i], cmap = 'gray')
