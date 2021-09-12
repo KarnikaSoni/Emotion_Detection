@@ -50,9 +50,9 @@ for j in range (1, 31, 2):
 ![Screenshot (69)](https://user-images.githubusercontent.com/70371572/130304626-e9302820-c31e-48a4-bef2-e3262972d860.png)
 
 ## Part 4. Image Augmentation
-We want to Horizintally flip the images i.e.  flip the images along y axis.This means y coordinate values would be the same and only x coordiante values would change, we subtract our initial x-coordinate values from width of the image(96).
+We want to Horizontally flip the images i.e.  flip the images along y axis.This means y coordinate values would be the same and only x co-ordinate values would change, we subtract our initial x-coordinate values from width of the image(96).
 
-### Original Image and Horizonatlly flipped Image
+### Original Image and Horizontally flipped Image
 ![Screenshot (70)](https://user-images.githubusercontent.com/70371572/130325501-4adbae90-050e-4483-bc23-ca4a11eb225d.png)
 Now we do this for every image in our dataframe and then concatenate the original dataframe with the augmented dataframe. We can also try experimenting with other ways to change the image by increasing or decreasing brightness which can be achieved by multiplying pixel values by random values between 1.5 and 2.
 
