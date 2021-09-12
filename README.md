@@ -1,5 +1,5 @@
 # Emotion_Detection
-I have worked on a project to classify people's emotions based on their facial images using AI. This project covers building and training of a system that automatically classifies peoples expressions. We have more than 20000 facial images with their associated facial expression labels and around 2000 images with their facial key-points annotations. We will essentially feed these images to our Emotion AI model which can 1) Predict which emotion the person is shwoing and 2) Predict key facial points of the person.
+I have worked on a project to classify people's emotions based on their facial images using AI. This project covers building and training of a system that automatically classifies peoples expressions. We have more than 20000 facial images with their associated facial expression labels and around 2000 images with their facial key-points annotations. We will essentially feed these images to our Emotion AI model which can 1) Predict which emotion the person is showing and 2) Predict key facial points of the person.
 
 ## Part 1.Facial Key Points Detection
 In this section we will create a deep learning model based on Convolutional Neural Network and Residual Blocks to predict facial key-points.
