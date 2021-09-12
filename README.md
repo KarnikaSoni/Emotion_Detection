@@ -197,5 +197,4 @@ We combine 2 models by assigning the df-Predict of model_1 add df_emotion in a s
 We can see the results of this combined model which plots both predicted emotions and key facial points.
 ![Screenshot (97)](https://user-images.githubusercontent.com/70371572/130335181-005fcfc1-fc9c-4a85-b0a8-73da3f6101b9.png)
 
-
-Note: This project was with help of online Udemy course.
+Note: This project was made with help of an online Udemy course.
