@@ -89,7 +89,7 @@ Gradient Descent
 - works using iteration to minimize the cost function.
 - it calculates the gradient of cost function and moving in the negative direction until global minimum is achieved.
 - The size of the steps taken are called the learning rate.
-- If learning rate increases then the area covered in te search space will increase so we might reach global minimum faster.
+- If learning rate increases then the area covered in the search space will increase so we might reach global minimum faster.
 - For smaller learning rates training will take much longer to reach optimized weight values.
 
 Convolutional Neural Networks
